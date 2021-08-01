@@ -1,0 +1,160 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navBar {
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    background-color: rgb(105, 167, 238);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+.navBar h1 {
+    text-align: left;
+    flex: 1;
+    margin-left: 10%;
+}
+
+.rightNav {
+    flex: 1;
+    margin-right: 10%;
+    text-align: right;
+    flex-direction: row;
+    word-spacing: 2em;
+    font-size: 20px;
+}
+
+.rightNav a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.mainContent {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.location {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+}
+
+label {
+    margin-right: 8px;
+}
+
+select {
+    border: 2px solid black;
+}
+
+.forecast {
+    height: 350px;
+    padding: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.forecastDay {
+    height: 98%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(212, 212, 212);
+    align-items: center;
+    justify-content: space-around;
+}
+
+.forecastDay img {
+    height: 160px;
+    width: 160px;
+    border: 0px transparent;
+    border-radius: 50%;
+}
+
+.forecastDay h3 {
+    font-size: 22px;
+}
+
+.forecastDay p {
+    font-size: 18px;
+}
+
+.temps {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.temps .highTemp {
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(196, 5, 43);
+}
+
+.temps .lowTemp {
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(66, 130, 248);
+}
+
+.cookie {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 120px;
+    border: 3px solid black;
+    padding: 5px 0px;
+    background-color: rgb(212, 212, 212);
+}
+
+#cookieIcon {
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+}
+
+.cookieTitle p {
+    font-size: 18px;
+    width: 90%;
+    height: 80%;
+    font-weight: normal;
+    line-height: normal;
+    /* margin: 0px 20px 0px 10px; */
+}
+
+.cookieTitle {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.8;
+    margin: 0px 20px 0px 10px;
+    /* line-height: 1.8; */
+}
+
+#acceptCookies {
+    width: 120px;
+    height: 30px;
+    margin: 10px;
+    border: 2px solid black;
+    background-color: rgb(105, 167, 238);
+    box-shadow: 4px 4px 0px black;
+}
