@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <title>DojoWeather</title>
 </head>
-<body>
+<body onload="dayOfWeek()">
     <div class="container">
         <div class="navBar">
             <h1>DojoWeather</h1>
             <div class="rightNav">
-                <a href="#" onclick="alert('Loading weather report...')">Burbank</a>
-                <a href="#" onclick="alert('Loading weather report...')">Chicago</a>
-                <a href="#" onclick="alert('Loading weather report...')">Dallas</a>
+                <a href="#" onclick="newCity(this)">Burbank</a>
+                <a href="#" onclick="newCity(this)">Chicago</a>
+                <a href="#" onclick="newCity(this)">Dallas</a>
             </div>
         </div>
         <div class="mainContent">
             <div class="location">
-                <h2>San Jose</h2>
+                <h2 id="city_title">San Jose</h2>
                 <form>
                     <label for="tempType">show temperature in</label>
                     <select name="tempType" id="changeT" onchange="changeTemp(this)">
@@ -30,28 +30,28 @@
                 </form>
             </div>
             <div class="forecast">
-                <div class="forecastDay">
-                    <h3>Today</h3>
-                    <img src="assets\some_rain.png" alt="rain cloud">
-                    <p>some rain</p>
+                <div class="forecastDay" id="today">
+                    <h3 id="today_label">Today</h3>
+                    <img src="assets\some_rain.png" alt="rain cloud" id="today_image">
+                    <p id="today_forecast">some rain</p>
                     <div class="temps"><div class="highTemp">24°</div><div class="lowTemp">18°</div></div>
                 </div>
-                <div class="forecastDay">
-                    <h3>Tomorrow</h3>
-                    <img src="assets\some_sun.png" alt="sunshine">
-                    <p>some sun</p>
+                <div class="forecastDay"id="tomorrow">
+                    <h3 id="tomorrow_label">Tomorrow</h3>
+                    <img src="assets\some_sun.png" alt="sunshine" id="tomorrow_image">
+                    <p id="tomorrow_forecast">some sun</p>
                     <div class="temps"><div class="highTemp">27°</div><div class="lowTemp">19°</div></div>
                 </div>
-                <div class="forecastDay">
-                    <h3>Friday</h3>
-                    <img src="assets\some_clouds.png" alt="cloud">
-                    <p>some clouds</p>
+                <div class="forecastDay"id="two_days_out">
+                    <h3 id="two_days_out_label">Friday</h3>
+                    <img src="assets\some_clouds.png" alt="cloud" id="two_days_out_image">
+                    <p id="two_days_out_forecast">some clouds</p>
                     <div class="temps"><div class="highTemp">21°</div><div class="lowTemp">16°</div></div>
                 </div>
-                <div class="forecastDay">
-                    <h3>Saturday</h3>
-                    <img src="assets\some_sun.png" alt="sunshine">
-                    <p>some sun</p>
+                <div class="forecastDay"id="three_days_out">
+                    <h3 id="three_days_out_label">Saturday</h3>
+                    <img src="assets\some_sun.png" alt="sunshine" id="three_days_out_image">
+                    <p id="three_days_out_forecast">some sun</p>
                     <div class="temps"><div class="highTemp">26°</div><div class="lowTemp">21°</div></div>
                 </div>
             </div>
